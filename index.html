@@ -47,91 +47,111 @@
           </div>
           <nav id="navigation">
             <ul class="header_navigator">
-              <li>
-                <a href="#products" class="header_navigator_link">Услуги</a>
+              <li class="header_navigator_order">
+                <a href="#apply" class="header_navigator_link">Заказать аквариум</a>
               </li>
-              <li>
-                <a href="#aquariums" class="header_navigator_link">Аквариумы</a>
-              </li>
-              <li>
-                <a href="#apply" class="header_navigator_link">Заказать</a>
+              <li class="header_navigator_other">
+                <a href="#products" class="header_navigator_link">Другие услуги</a>
               </li>
             </ul>
           </nav>
       </div>
     </header>
     <main>
-      <section class="section_products" id="products">
-        <div class="products">
-          <ul class="products_list">
-              <li class="products_list_point_1" onclick="showHide('maintenance'); hide('design'); hide('key_ready')">
-                <img src="./image/aquarium.svg" class="products_list_point_image">
-                <h3 class="products_list_point_name">Обслуживание</h3>     
-                <div class="products_list_point_div1">
-                	<p class="products_list_point_text">Полный комплекс по уходу за аквариумом: проверка параметров воды, контроль работы оборудования, чистка, кормление и лечение. Гарантия на животных.</p>
-                </div>
-              </li>
-            <li class="products_list_point_2" onclick="showHide('design'); hide('maintenance'); hide('key_ready')">
-              <img src="./image/aquarium2.svg" class="products_list_point_image">
-              <h3 class="products_list_point_name">Оформление</h3>
-              	<div class="products_list_point_div2">
-	              <p class="products_list_point_text">Морской или пресноводный аквариум. Натуральный камень и дерево. Живые растения. Гарантия на качество материалов.</p>
-	            </div>
+      <section class="products" id="products">
+        <div class="types_places">
+          <h3 class="h3">Создаем и обслуживаем аквариумы для...</h3>
+          <ul class="types_places_list">
+            <li class="types_places_list_li">
+              <img src="./image/home.svg" class="types_place_list_image">
+              <h4 class="types_places_list_name">Дома</h4>
+              <p>Аквариум дома дополняет дизайн интерьера, создаёт уют и удивляет гостей.</p>
             </li>
-            <li class="products_list_point_3" onclick="showHide('key_ready'); hide('maintenance'); hide('design')">
-              <img src="./image/aquarium3.svg" class="products_list_point_image">
-              <h3 class="products_list_point_name">Аквариум под ключ</h3>
-              <div class="products_list_point_div3">
-	              <p class="products_list_point_text">Путь от эскиза до запуска аквариума. Профессиональная консультация на каждом этапе. Гарантия на выполненные работы.</p>
-              </div>
+            <li class="types_places_list_li">
+              <img src="./image/office.svg" class="types_place_list_image">
+              <h4 class="types_places_list_name">Офиса</h4>
+              <p>Наблюдение за рыбками успокаивает, снимает стресс и помогает сосредоточиться в течение рабочего дня.</p>
+            </li>
+            <li class="types_places_list_li">
+              <img src="./image/restaurant.svg" class="types_place_list_image">
+              <h4 class="types_places_list_name">Ресторана</h4>
+              <p>Установите аквариум в ресторане и порадуйте гостей свежими морепродуктами.</p>
+            </li>
+            <li class="types_places_list_li">
+              <img src="./image/zoo.svg" class="types_place_list_image">
+              <h4 class="types_places_list_name">Зоопарка</h4>
+              <p>Аквариумы для экспозиции или тачпулы для трогательного зоопарка.</p>
             </li>
           </ul>
-          <div class="div_show_hide" id="maintenance">
-            <h3 class="div_products_list_point_name">Обслуживание</h3>
-            <p>Не стоит забывать, что обитатели аквариума — это живые существа, которым необходим регулярный уход. Для поддержания комфортных условий их обитания важно:</p>
-              <ul class="div_show_hide_list">
-                <li>соблюдать режим кормления</li>
-                <li>проводить чистку</li>
-                <li>поддерживать подходящие параметры воды</li>
-                <li>проверять исправность оборудования</li>
-                <li>своевременно диагностировать и лечить болезни</li>
-              </ul>
-              <p>Мы оцениваем необходимость различных процедур в зависимости от типа, размеров, оснащения аквариума и потребностей его обитателей. На основании этой оценки с учетом Ваших пожеланий мы составляем индивидуальный план обслуживания для каждого объекта.</p>
+        </div>
+        <h2 class="h2">Что мы предлагаем</h2>
+        <div class="products_div">
+          <div class="products_div_image">
+            <img src="./image/Maintain_2.jpeg" class="products_image">
           </div>
-          <div class="div_show_hide" id="design">
-            <h3 class="div_products_list_point_name">Оформление</h3>
-            <p>Существует огромное множество вариантов оформления аквариумов, и мы поможем подобрать подходящий дизайн в зависимости от интерьера и характера использования аквариума с учетом Ваших пожеланий.
-            <ul class="div_show_hide_list">
-              <li>При оформлении мы используем натуральные камень и дерево, живые растения.</li>
-              <li>Определяем подходящее наполнение для морских и пресноводных аквариумов.</li>
-              <li>Подбираем обитателей на Ваш вкус и следим за их совместимостью.</li>
+          <div class="products_div_text">
+            <h3 class="h3">Обслуживание</h3>
+            <p class="products_div_text_p">Обитатели аквариума - живые существа, которым необходим регулярный уход. Поддерживайте комфортные для них условия обитания и не забывайте:</p>
+            <ul class="products_div_text_list">
+              <li class="products_div_text_list_li">соблюдать режим кормления</li>
+              <li class="products_div_text_list_li">поддерживать параметры воды</li>
+              <li class="products_div_text_list_li">проверять, исправно ли оборудование</li>
+              <li class="products_div_text_list_li">чистить аквариум</li>
+              <li class="products_div_text_list_li">следить за здоровьем обитателей</li>
             </ul>
-            </p>
+            <p class="products_div_text_p">Мы поможем определить, какие процедуры необходимы, и возьмем заботы о содержании аквариума на себя.</p>
           </div>
-          <div class="div_show_hide" id="key_ready">
-            <h3 class="div_products_list_point_name">Аквариум под ключ</h3>
-            <p>Чтобы поставить аквариум, Вам не придется бегать по разным фирмам в поисках нужного оборудования, рыбок, материалов, а потом самостоятельно его устанавливать. Мы оказываем полный комплекс услуг по изготовлению аквариума: </p>
-            <ul class="div_show_hide_list">
-              <li>создание эскиза</li>
-              <li>изготовление аквариума</li>
-              <li>подбор оборудования</li>
-              <li>установка и запуск</li>
+        </div>
+        <div class="products_div">
+          <div class="products_div_text">
+            <h3 class="h3">Оформление</h3>
+            <p class="products_div_text_p">Разработаем дизайн, который будет сочетаться с интерьером и отвечать характеру использования аквариума.</p>
+            <ul class="products_div_text_list">
+              <li class="products_div_text_list_li">Используем натуральные камень и дерево, живые растения.</li>
+              <li class="products_div_text_list_li">Выбираем наполнение для морских и пресноводных аквариумов.</li>
+              <li class="products_div_text_list_li">Подбираем обитателей и следим за их совместимостью.</li>
             </ul>
-            <p>Мы обязательно учтем Ваши пожелания, проконсультируем по каждому из пунктов, согласуем план проекта и выполним все работы в установленный срок.</p>
+          </div>
+          <div class="products_div_image">
+            <img src="./image/Design_2.jpeg" class="products_image">
+          </div>
+        </div>
+        <div class="products_div_order">
+          <div class="products_div_image">
+            <img src="./image/Key.png" class="products_image">
+          </div>
+          <div class="products_div_text">
+            <h3 class="h3">Аквариум под ключ</h3>
+            <p class="products_div_text_p">Вы заказываете - мы исполняем.</p>
+            <ul class="products_div_text_list">
+              <li class="products_div_text_list_li">нарисуем эскиз</li>
+              <li class="products_div_text_list_li">смонтируем аквариум</li>
+              <li class="products_div_text_list_li">подберем оборудование</li>
+              <li class="products_div_text_list_li">установим и запустим систему</li>
+            </ul>
+            <p class="products_div_text_p">Дадим совет по каждому из пунктов, согласуем план и выполним работу вовремя.</p>
+            <div class="products_order">
+                <p class="header_navigator_link">Заказать</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="broad_description" id="aquariums">
-        <div class="broad_description_product_sea">
-        	<div class="broad_description_product_textbox_1">
-            <h2 class="broad_description_product_textbox_name">Морской аквариум</h2>
-            <p class="broad_description_product_textbox_text_1">Живой коралловый риф прямо у вас дома. Удивительный подводный город, населенный рыбками самых разных форм и расцветок. Наши морские аквариумы никого не оставят равнодушными!</p>
+      <section class="types" id="aquariums">
+        <div class="type_sea">
+        	<div class="type_sea_text">
+            <h3 class="h3_white">Морские</h3>
+            <p class="type_sea_text_p"> Морской аквариум - окно в подводный мир у кораллового рифа, на котором живут разноцветные рыбки и кораллы, морские ежи, моллюски, крабы, медузы.</p>
+            <p class="type_sea_text_p">
+            Морской аквариум может быть теплым или холодным, рыбным, видовым или рифовым.</p>
           </div>
         </div>
-        <div class="broad_description_product_sweet">
-          <div class="broad_description_product_textbox_2">
-            <h2 class="broad_description_product_textbox_name">Пресноводный аквариум</h2>
-            <p class="broad_description_product_textbox_text_2">Самые интересные рыбки со всех уголков планеты. Разные варианты оформления: голандский с живыми растениями, псевдоморе, авкаскейп, биотоп. Вам остаётся только выбрать!</p>
+        <div class="type_sweet">
+          <div class="type_sea_text">
+            <h3 class="h3_white">Пресноводные</h3>
+            <p class="type_sea_text_p">Известные обитатели пресноводного аквариума: золотые рыбки, петушки, попугаи, гуппи, сомы, дискусы, скалярии, улитки, крабы и креветки. 
+            </p>
+            <p class="type_sea_text_p"> Оформить пресноводный аквариум можно по-разному: сделать голландский аквариум с живыми растениями, псевдоморе, акваскейп или биотоп.  
+            </p>
           </div>
         </div>
       </section>
