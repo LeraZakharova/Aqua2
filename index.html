@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="products" id="products">
+      <section class="types" id="aquariums">
         <div class="types_places">
           <h3 class="h3">Создаем и обслуживаем аквариумы для...</h3>
           <ul class="types_places_list">
@@ -84,7 +84,30 @@
             </li>
           </ul>
         </div>
-        <h2 class="h2">Что мы предлагаем</h2>
+        <div class="types_water">
+          <div class="types_water_div">
+            <img src="./image/Background.jpg" class="type_image">
+            <div class="type_sea_text">
+              <h3 class="h3">Морские</h3>
+              <p class="type_sea_text_p"> Морской аквариум - окно в подводный мир у кораллового рифа, на котором живут разноцветные рыбки и кораллы, морские ежи, моллюски, крабы, медузы.
+              Морской аквариум может быть теплым или холодным, рыбным, видовым или рифовым.</p>
+            </div>
+          </div>
+          <div class="types_water_div">
+            <img src="./image/Sweet.jpeg" class="type_image">
+            <div class="type_sea_text">
+              <h3 class="h3">Пресноводные</h3>
+              <p class="type_sea_text_p">Известные обитатели пресноводного аквариума: золотые рыбки, петушки, попугаи, гуппи, сомы, дискусы, скалярии, улитки, крабы и креветки. 
+              Оформить пресноводный аквариум можно по-разному: сделать голландский аквариум с живыми растениями, псевдоморе, акваскейп или биотоп.  
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="products_order" id="order">
+                <a href="#apply" class="header_navigator_link">Заказать</a>
+            </div>
+      </section>
+      <section class="products" id="products">
         <div class="products_div">
           <div class="products_div_image">
             <img src="./image/Maintain_2.jpeg" class="products_image">
@@ -130,88 +153,52 @@
               <li class="products_div_text_list_li">установим и запустим систему</li>
             </ul>
             <p class="products_div_text_p">Дадим совет по каждому из пунктов, согласуем план и выполним работу вовремя.</p>
-            <div class="products_order">
-                <p class="header_navigator_link">Заказать</p>
-            </div>
           </div>
         </div>
       </section>
-      <section class="types" id="aquariums">
-        <div class="type_sea">
-        	<div class="type_sea_text">
-            <h3 class="h3_white">Морские</h3>
-            <p class="type_sea_text_p"> Морской аквариум - окно в подводный мир у кораллового рифа, на котором живут разноцветные рыбки и кораллы, морские ежи, моллюски, крабы, медузы.</p>
-            <p class="type_sea_text_p">
-            Морской аквариум может быть теплым или холодным, рыбным, видовым или рифовым.</p>
-          </div>
-        </div>
-        <div class="type_sweet">
-          <div class="type_sea_text">
-            <h3 class="h3_white">Пресноводные</h3>
-            <p class="type_sea_text_p">Известные обитатели пресноводного аквариума: золотые рыбки, петушки, попугаи, гуппи, сомы, дискусы, скалярии, улитки, крабы и креветки. 
-            </p>
-            <p class="type_sea_text_p"> Оформить пресноводный аквариум можно по-разному: сделать голландский аквариум с живыми растениями, псевдоморе, акваскейп или биотоп.  
-            </p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="apply" id="apply">
-          <h3 class="broad_description_product_textbox_name">Как заказать</h3>
-          <div class="div_show_hide_apply">
-            <p>Чтобы заказать у нас изготовление, обслуживание аквариума или уточнить интересующую Вас информацию, свяжитесь с нами</p>
-            <ul class="div_show_hide_list">
-              <li>по электронной почте <a href="mailto:info@aquaqube.ru" class="div_show_hide_link">info@aquaqube.ru</a></li>
-              <li>по телефону <a href="tel: +79168524321" class="div_show_hide_link">+70000000000</a></li>
-              <li>через <a href="https://wa.me/79168524321" class="div_show_hide_link">WhatsApp</a> или <a href="tg://resolve?domain=<Aquacube>" class="div_show_hide_link">Telegram</a></li>
-              <li>или заполнив <a href="#apply" class="div_show_hide_link" onclick="showHide('form')"> форму обратной связи</a></li>
+      
+      <section class="section_contacts" id="apply">
+        <h3 class="h3">Закажите изготовление, обслуживание аквариума или задайте вопрос</h3>
+        <div class="contacts">  
+          <div class="contacts_list">
+            <ul class="contacts_list_ul">
+              <li>E-mail: <a href="mailto:info@aquaqube.ru" class="contacts_link">info@aquaqube.ru</a></li>
+              <li>Телефон:<a href="tel: +79168524321" class="contacts_link">+70000000000</a></li>
+              <li><a href="https://wa.me/79168524321" class="contacts_link">WhatsApp</a></li>
+              <li><a href="tg://resolve?domain=<Aquacube>" class="contacts_link">Telegram</a></li>
             </ul>
+          </div>            
+          <div class="contacts_form">
+            <form class="form">
+              <input class="form_input" name="Name" type="Text" required>
+              <p class="form_placeholder">Имя</p>
+              <input class="form_input" name="Email" type="email" required>
+              <p class="form_placeholder">E-mail</p>
+              <input id="phone" class="form_input" name="Phone" type="tel" required>
+              <p class="form_placeholder">Номер телефона</p>
+              <textarea class="form_text" name="Description" cols="100" rows="3" ></textarea>
+              <p class="form_placeholder">Описание заказа</p>
+              <input class="form_button" type="submit" value="отправить">
+            </form>
           </div>
-          <div class="form" id="form">
-            <div class="form_div">
-              <div class="form_close">
-                <img src="./image/close.svg" height="15" class="form_close_image" onclick="showHide('form')">
-              </div>
-              <form class="online_form_form" method="post" onsubmit="showHide('form')">
-                <div class="online_form">
-                  <div class="online_form_data">
-                    <input class="online_form_form_placeholder" name="Name" type="Text" placeholder="Ваше Имя" required>
-                    <input class="online_form_form_placeholder" name="Email" type="email" placeholder="E-mail" required>
-                    <input id="phone" class="online_form_form_placeholder" name="Phone" type="tel" placeholder="Номер телефона" required>
-                  </div>
-                    <textarea class="online_form_form_textbox" name="Description" cols="100" rows="3" placeholder="Введите краткое описание заказа (не обязательно)"></textarea>
-                </div>
-                <input class="online_form_form_button" type="submit" value="отправить">
-              </form>
-            </div> 
-          </div> 
         </div>  
       </section>
     </main>
-    <footer class="class_footer">
-      <div class="container">
-          <div class="container_contacts">
-            <div>
-              <a href="tel: +79168524321" class="container_contacts_link" title="Позвонить">+70000000000</a>
-            </div>
-            <div>
-            <a href="mailto:info@aquaqube.ru" class="container_contacts_link" title="Написать нам">info@aquaqube.ru</a>
-            </div>
-          </div>
-          <div class="footer_line"></div>
-          <div class="container_copyright">
-            <div class="copyright">
-              <p class="copyright_text">Фото 4 и 5 &#169; Copyright, 
-                <a class="link_copyright" href="https://www.facebook.com/sa4nov" title="Николай Сафонов - Facebook"> Николай Сафонов</a>
-              </p>
-            </div>
-            <div class="copyright">
-              <p class="copyright_text"> &#169; Copyright, 2018-2018 Aquacube.ru</p>
-            </div>
-          </div>  
-      </div>
+    <footer class="footer">
+      <div class="footer_copyright">
+        <div class="copyright">
+          <p class="copyright_text">Фото 4 и 5 &#169; Copyright, 
+            <a class="link_copyright" href="https://www.facebook.com/sa4nov" title="Николай Сафонов - Facebook"> Николай Сафонов</a>
+          </p>
+        </div>
+        <div class="copyright">
+          <p class="copyright_text"> &#169; Copyright, 2018-2018 Aquacube.ru</p>
+        </div>
+      </div>  
       <div id="toTop" class="toTop" onclick="up()">
-        <p class="toTop_link">Наверх</p>  
+        <div class="toTop_link">
+          <img src="./image/up.svg" height="15">
+        </div>  
       </div>
     </footer>
   <script src="script.js"></script>
