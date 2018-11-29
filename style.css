@@ -77,7 +77,6 @@
 .header_name{
 	padding-left: 5%;
 	padding-top: 5%;
-	position: relative;
 }
 
 .title{
@@ -114,7 +113,6 @@
 	padding-left: 5%;
 	padding-bottom: 5%;
 	margin: 0;
-	position: relative;
 }
 
 .header_navigator_order{
@@ -530,20 +528,12 @@
 	text-align: center;
 }
 
-.copyright_text{
-	margin: 5px;
-}
-
-.link_copyright{
-	text-decoration: none;
-	color: white;
-}
-
 .toTop{
 	position: fixed;
 	top: 0;
 	width: 100%;
     padding: 0px;
+    margin: 0;
     z-index:99991;
 }
 
@@ -620,11 +610,12 @@
 }
 
 @media all and (max-width: 460px){
+
 	.header_navigator{
 		flex-direction: column-reverse;
 		align-items: flex-start;
 		height: 110px;
-		width: 100%;
+		width: max-content;
 		padding-bottom: 10%;
 	}
 }
