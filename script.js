@@ -24,20 +24,6 @@ $(document).ready(function(){
     });
 });
 
-function showHide(element_id) {
-	var	obj = document.getElementById(element_id);
-	if (obj.style.display != "flex") {
-		obj.style.display = "flex"; //Показываем элемент
-	} else obj.style.display = "none"; //Скрываем элемент
-} 
-
-function hide(element_id){
-	var	obj = document.getElementById(element_id);
-	if (obj.style.display = "flex") {
-		obj.style.display = "none"; //Скрываем элемент
-	}
-}
-
 $(document).scroll( function() {
 	if ( $(document).scrollTop() > 0 ) {
 		$('#toTop').fadeIn();
