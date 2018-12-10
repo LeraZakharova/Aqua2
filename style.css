@@ -2,7 +2,7 @@
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
 	font-variant: all-petite-caps;
-	font-size: 27px;
+	font-size: 35px;
 	text-align: center;
 	margin: 0;
 	padding-left: 20px;
@@ -162,16 +162,6 @@
 	margin-top: 50px;
 }
 
-.types_places_name{
-	font-family: 'Rubik', sans-serif;
-	font-weight: 400;
-	font-variant: all-petite-caps;
-	font-size: 35px;
-	text-align: center;
-	padding-top: 50px;
-	margin: 0;
-}
-
 .types_places_list{
 	width: 100%;
 	display: flex;
@@ -179,10 +169,6 @@
 	align-items: center;
 	justify-content: space-evenly;
 	list-style: none;
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-align: center;
 	padding: 0;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -192,7 +178,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 150px;
+	width: 250px;
 	padding-left: 10px;
 	padding-right: 10px;
 	height: 250px;
@@ -205,7 +191,7 @@
 .types_places_list_name{
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 25px;
 	font-variant: all-petite-caps;
 	text-align: center;
 	margin-top: 10px;
@@ -214,6 +200,10 @@
 
 .types_places_list_text{
 	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
 }
 
 .types_water{
@@ -259,6 +249,56 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 50px;
+}
+
+.products_top{
+	width: 100%;
+	height: 450px;
+	background-image: url(./image/Discus.jpg);
+	background-size: cover;
+	background-position-y: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.products_top::before{
+	content: '';
+	width: 100%;
+	height: 450px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+}
+
+.products_top_h2{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-variant: all-petite-caps;
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+	display: none;
+	color: white;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.products_top_list{
+	font-family: 'Rubik', sans-serif;
+	width: 90%;
+	font-weight: 300;
+	font-variant: all-petite-caps;
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: white;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
 }
 
 .products_div{
