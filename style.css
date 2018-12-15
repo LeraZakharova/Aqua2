@@ -304,7 +304,7 @@
 .products_div{
 	width: 100%;
 	height: max-content;
-	padding-top: 10%;
+	padding-top: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -314,7 +314,7 @@
 .products_div_reverse{
 	width: 100%;
 	height: max-content;
-	padding-top: 10%;
+	padding-top: 5%;
 	display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
@@ -323,7 +323,7 @@
 
 .products_div_order{
 	width: 100%;
-	padding-top: 10%;
+	padding-top: 5%;
     height: max-content;
 	display: flex;
 	flex-wrap: wrap-reverse;
@@ -609,10 +609,21 @@
     color: white;
 }
 
+@media all and (max-width: 900px){
+	.types_places_list_li{
+		width: 150px;
+		height: 280px;
+	}
+
+	.types_places_list_text{
+		font-size: 16px;
+	}
+}
+
 
 @media all and (max-width: 800px){
 	.h3{
-		font-size: 22px;
+		font-size: 28px;
 	}
 
 	.type_sea_text_p{
