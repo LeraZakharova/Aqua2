@@ -238,7 +238,7 @@
 .type_sea_text_p{
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	margin: 5% 0 0;
 }
@@ -395,7 +395,7 @@
 .products_div_text_p{
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	margin: 5px;
 }
@@ -404,7 +404,7 @@
 	list-style: none;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: center;
 	list-style-position: inside;
 	padding: 0;
@@ -514,7 +514,7 @@
 .form_placeholder{
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 18px;
 	font-variant: all-petite-caps;
 	margin-top: -20px;
 }
@@ -626,16 +626,20 @@
 		font-size: 28px;
 	}
 
+	.types_places_list_text{
+		font-size: 16px;
+	}
+
 	.type_sea_text_p{
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.products_div_text_p{
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.products_div_text_list{
-		font-size: 14px;
+		font-size: 16px;
 	}
 } 
 
