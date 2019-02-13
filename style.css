@@ -833,6 +833,7 @@
     padding: 0px;
     margin: 0;
     z-index:99991;
+    display: none;
 }
 
 .toTop_link{
