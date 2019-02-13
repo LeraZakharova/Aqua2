@@ -828,12 +828,11 @@
 
 .toTop{
 	position: fixed;
-	top: 0;
-	width: 100%;
+	bottom: 30px;
+	right: 40px;
     padding: 0px;
     margin: 0;
     z-index:99991;
-    display: none;
 }
 
 .toTop_link{
@@ -842,9 +841,11 @@
 	font-weight: 300;
 	font-size: 18px;
 	color: white;
-    height: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
     margin: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: black;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -862,8 +863,10 @@
 }
 
 .toTop_link:hover{
-	height: 30px;
-    background: rgba(0,0,0,1);
+	height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #F65F3C;
     -webkit-transition: all linear 0.2s;
     -o-transition: all linear 0.2s;
     transition: all linear 0.2s;
