@@ -1,14 +1,50 @@
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131292437-1"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131292437-1');
+	</script>
+
+    <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51672554, "init", {
+        id:51672554,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/51672554" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <title>Aquacube. Изготовление и обслуживание аквариумов.</title>
     <meta name="keywords" content="Аквариум, купить аквариум, заказать аквариум, аквариум для дома, аквариум для офиса, аквариум для ресторана, обслуживание аквариума, ремонт аквариума, аквариумные рыбки">
     <meta name="description" content="Изготовление и обслуживание морских и пресноводных аквариумов для дома, офиса и ресторанов.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="yandex-verification" content="9eb379c3d701077d" />
+    <meta name='wmail-verification' content='177bfb131b10b136a98a263722d797e5' />
+    <meta property="og:title" content="Aquacube. Изготовление и обслуживание аквариумов." />
+    <meta property="og:description" content="Изготовление и обслуживание морских и пресноводных аквариумов для дома, офиса и ресторанов." />
+    <meta property="og:url" content="https://aquacube.pro/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://aquacube.pro/image/Snippet.jpg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Sweet.jpg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Maintain_2.jpeg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Design.jpg" />
     <link rel="stylesheet" href="./style.css">
     <link rel="reset" href="./reset.css">
     <link rel="normalize" href="./normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500|Rubik:300,400,500,700" rel="stylesheet">  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>  
   </head>
   <body class="body">
@@ -16,12 +52,12 @@
       <div class="main_image">
         <div class="header_name">
           <h1 class="title">Aquacube</h1>
-          <h4 class="title_under">Аквариумы на заказ</h4>
+          <h4 class="title_under">Аквариумы&nbspна&nbspзаказ</h4>
         </div>
         <nav id="navigation">
           <ul class="header_navigator">
             <li class="header_navigator_order">
-              <a href="#apply" class="header_navigator_link">Заказать аквариум</a>
+              <a href="#apply" class="header_navigator_link">Заказать&nbspаквариум</a>
             </li>
             <li class="header_navigator_other">
               <a href="#products" class="header_navigator_link">Услуги</a>
@@ -136,7 +172,7 @@
             </ul>
           </div>            
           <div class="contacts_form">
-            <form class="form">
+            <form class="form" action="send.php" method="post">
               <input class="form_input" name="Name" type="Text" required>
               <p class="form_placeholder">Имя</p>
               <input class="form_input" name="Email" type="email" required>
@@ -153,7 +189,7 @@
     </main>
     <footer class="footer">
       <div class="footer_copyright">
-        <p class="copyright"> &#169; Copyright, 2018-2018 Aquacube.ru</p>
+        <p class="copyright"> &#169; Copyright, 2018-2018 Aquacube.pro</p>
       </div>  
       <div id="toTop" class="toTop" onclick="up()">
         <div class="toTop_link">
