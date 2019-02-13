@@ -1,3 +1,75 @@
+.navigation_bar{
+	width: 100%;
+	height: 90px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+
+.navigation{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.navigation_li{
+	width: 95px;
+	height: 20px;
+	padding: 20px;
+	border: solid;
+	border-color: black;
+	border-left: 0;
+	border-top: 0;
+	border-bottom: 0;
+	border-width: 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	word-wrap: break-word;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	font-variant: all-petite-caps;
+	text-align:-moz-center;
+    text-align:-webkit-center;
+	text-align: center;
+}
+
+.navigation_li_last{
+	width: 95px;
+	height: 20px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	word-wrap: break-word;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	font-variant: all-petite-caps;
+	text-align:-moz-center;
+    text-align:-webkit-center;
+	text-align: center;
+}
+
+.navigation_li_link{
+	text-decoration: none;
+	color: black;
+}
+
 .h3{
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
@@ -24,27 +96,6 @@
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-}
-
-.header_top_line{
-	background-color: white;
-	height: 40px;
-	width: 100%;
-	display: none;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-
-.header_top_phone{
-	padding-left: 5%;
 }
 
 .div_social_networks{
@@ -77,6 +128,7 @@
 
 .main_image{
 	width: 100%;
+	margin-top: 90px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -781,6 +833,7 @@
     padding: 0px;
     margin: 0;
     z-index:99991;
+    display: none;
 }
 
 .toTop_link{
