@@ -198,7 +198,7 @@
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	width: 400px;
+	width: 550px;
 	padding-left: 5%;
 	padding-bottom: 5%;
 	margin: 0;
@@ -657,66 +657,13 @@
     margin-bottom: 10%;
 }
 
-.turnkey{
-	width: 90%;
-	height: max-content;
-	min-height: 400px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.turnkey_container{
-	display: flex;
-	align-items: center;
-	width: 40%;
-    box-sizing: border-box;
-    min-width: 280px;
-    height: 320px;
-	margin: 10;
-	border: solid;
-	border-color: #F65F3C;
-	border-width: 5px;
-}
-
-.turnkey_box_1{
-	display: flex;
-    align-items: center;
-    width: 40%;
-    min-width: 280px;
-    height: 320px;
-	box-sizing: content-box;
-	background-image: url(./image/Nemo.jpeg);
-}
-
-.turnkey_box_2{
-	display: flex;
-    align-items: center;
-    width: 40%;
-    min-width: 280px;
-    height: 320px;
-	box-sizing: content-box;
-	background-image: url(./image/Nemo.jpeg);
-}
-
-.turnkey_text{
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	text-align: center;
-	padding: 10px;
-	
-}
-
 .chart{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 300px;
+	height: 400px;
 }
 
 .chart_item{
@@ -725,6 +672,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+	width: 150px;
+	height: 230px;
 }
 
 .chart_item:hover{
@@ -738,12 +688,12 @@
 }
 
 .chart_item:hover .chart_item_text{
-	display: block;
+	font-size: 17px;
 	transition: all linear 0.5s;
 }
 
 .chart_item:hover .chart_item_icon{
-	width: 80px;
+	width: 60px;
 	transition: all linear 0.5s;
 }
 
@@ -754,11 +704,11 @@
 	font-size: 15px;
 	margin-bottom: 0;
     text-align: center;
-    display:none;
+    display: block;
 }
 
 .chart_item_icon{
-	width: 60px;
+	width: 70px;
 }
 
 .chart_arrow{
@@ -988,6 +938,128 @@
     -o-transition: all linear 0.2s;
     transition: all linear 0.2s;
     color: white;
+}
+
+.return_call{
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	top: 25px;
+	right: 25px;
+	background-color: #F65F3C;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.return_call:hover {
+	width: 200;
+	transition: all linear 0.2s;
+}
+
+.return_call:hover .return_call_text{
+	display: block;
+	transition: all linear 0.2s;
+}
+
+.return_call_icon{
+	height: 20px;
+	margin: 10px;
+}
+
+.return_call_text{
+	display: none;
+	font-family: 'Rubik', sans-serif;
+	font-variant: all-petite-caps;
+	font-weight: 300;
+	font-size: 14px;
+	color: white;
+	margin-right: 10px;
+}
+
+.return_call_container{
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.return_call_form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	width: 30%;
+	min-width: 280px;
+	height: 60%;
+	min-height: 300px;
+	background-color: white;
+}
+
+.return_call_input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid;
+	border-color: black;
+	border-width: 2px;
+	height: 40px;
+	width: 250px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.return_call_input:focus{
+	outline: 0;
+	outline-offset: 0;
+	background-color: #F4F4F4;
+}
+
+.return_call_placeholder{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	font-variant: all-petite-caps;
+	color: black;
+	margin-top: 0;
+}
+
+.return_call_button{
+	height: 40px;
+	font-family: 'Rubik', sans-serif;
+	font-variant: all-petite-caps;
+	font-weight: 300;
+	font-size: 18px;
+	color: white;
+	background-color: black;
+	border: none;
+	width: 250px;
+	margin:15 0;
+}
+
+.return_call_close{
+	height: 40px;
+	font-family: 'Rubik', sans-serif;
+	font-variant: all-petite-caps;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	background-color: white;
+	border: solid;
+	box-sizing: border-box;
+	border-color: black; 
+	width: 250px;
+	margin:10 0;
 }
 
 @media all and (max-width: 900px){

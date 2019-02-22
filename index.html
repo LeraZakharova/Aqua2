@@ -87,7 +87,7 @@
               <a href="#apply" class="header_navigator_link">Заказать&nbspаквариум</a>
             </li>
             <li class="header_navigator_other">
-              <a href="#products" class="header_navigator_link">Услуги</a>
+              <a href="#products" class="header_navigator_link">Рассчитать&nbspстоимость</a>
             </li>
           </ul>
         </nav>
@@ -155,17 +155,6 @@
             </div>
           </div>
         </div>
-        <div class="turnkey">
-            <div class="turnkey_container">
-                <p class="turnkey_text">Купить аквариум несложно, а вот подобрать размер и оформление под интерьер, выбрать и правильно установить оборудование, подобрать аквариумных рыбок, которые будут мирно сосуществовать, и создать для них комфортные условия сможет только специалист из области аквариумистики.</p>
-            </div>
-            <div class="turnkey_box_1"></div>
-            <div class="turnkey_box_2"></div>
-            <div class="turnkey_container">
-                <p class="turnkey_text">Aquacube предлагает изготовление аквариума на заказ: от вас потребуется только озвучить пожелания и утвердить эскиз. Наши специалисты спроектируют ваш аквариум, подготовят стеклянный каркас, приобретут качественное оборудование, рыбок и декорации у надежных поставщиков и запустят систему.</p>
-            </div>
-        </div>
-        <h3 class="h3">Схема работы</h3>
         <div class="chart">
           <div class="chart_item">
             <img src="./image/computer.svg" class="chart_item_icon">
@@ -196,6 +185,9 @@
             <img src="./image/aquarium.svg" class="chart_item_icon">
             <p class="chart_item_text">Аквариум готов!</p>
           </div>
+        </div>
+        <div>
+          <h3>Рассчитать стоимость</h3>
         </div>
         <div class="products_div_reverse" id="maintenance">
           <div class="products_div_text">
@@ -264,6 +256,20 @@
         <div class="toTop_link">
           <img src="./image/up.svg" height="15">
         </div>  
+      </div>
+      <div class="return_call" onclick="showHide('return_call')">
+        <img src="./image/phone.svg" class="return_call_icon">
+        <p class="return_call_text">Заказать обратный звонок</p>
+      </div>
+      <div class="return_call_container" id="return_call">
+        <form class="return_call_form">
+          <input class="return_call_input" name="Name" type="Text" required>
+          <p class="return_call_placeholder">Имя</p>
+          <input id="phone" class="return_call_input" name="Phone" type="tel" required>
+          <p class="return_call_placeholder">Номер телефона</p>
+          <input class="return_call_button" type="submit" value="отправить">
+          <button class="return_call_close" onclick="showHide('return_call')">Закрыть</button>
+        </form>
       </div>
     </footer>
   <script src="script.js"></script>
