@@ -503,6 +503,65 @@
 	border: solid;
 	border-color: #F65F3C;
     border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calculate_form{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.calculate_container{
+	display: flex;
+	flex-direction: row;
+}
+
+.calculate_types{
+	width: 200px;
+    border: none;
+}
+
+.input_types{
+	margin: 10 0;
+}
+
+.calculate_dimensions{
+	border: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.input_dimensions{
+	margin: 10 0;
+	width: 170px;
+	height: 30px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.calculate_submit{
+	width: 300px;
+
+}
+
+.calculate_result{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.calculate_text{
+	margin: 0;
 }
 
 .products_div_reverse{

@@ -188,19 +188,24 @@
         </div>
         <div class="calculate">
           <h3 class="h3">Калькулятор стоимости</h3>
-          <form name="calculate">
-            <fieldset class="calculate_types">
-              <legend>Вид аквариума</legend>
-              <input type="radio" name="sea" value="Морской"> Морской <br>
-              <input type="radio" name="sweet" value="Пресноводный"> Пресноводный <br>
-            </fieldset>
-            <fieldset class="calculate_dimensions">
-              <legend>Размеры (см)</legend>
-              <input type="text" name="length" value="Длина">
-              <input type="text" name="width" value="Ширина">
-              <input type="text" name="height" value="Высота">
-            </fieldset>
-            <input type="submit" value="Рассчитать">
+          <form name="calculate" class="calculate_form">
+            <div class="calculate_container">
+              <fieldset class="calculate_types">
+                <legend>Вид аквариума</legend>
+                <input type="radio" name="type" value="Морской" class="input_types" id="Sea"> <label for="Sea">Морской </label><br>
+                <input type="radio" name="type" value="Пресноводный" class="input_types" id="Sweet"> <label for="Sweet">Пресноводный</label><br>
+              </fieldset>
+              <fieldset class="calculate_dimensions">
+                <legend>Размеры (см)</legend>
+                <input type="text" name="length" value="Длина" class="input_dimensions">
+                <input type="text" name="width" value="Ширина" class="input_dimensions">
+                <input type="text" name="height" value="Высота" class="input_dimensions">
+              </fieldset>
+            </div>
+            <input type="submit" value="Рассчитать" class="calculate_submit">
+            <div class="calculate_result">
+              <p class="calculate_text">Примерная стоимость аквариума:</p><output name="price">0</output>
+            </div>
           </form>
         </div>
         <div class="products_div_reverse" id="maintenance">
