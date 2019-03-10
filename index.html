@@ -59,13 +59,13 @@
               <a class="navigation_li_link" href="#types">Виды аквариумов</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#products">Купить аквариум</a>
+              <a class="navigation_li_link" href="#products">Аквариум на заказ</a>
             </li>
             <li class="navigation_li">
               <a class="navigation_li_link" href="#maintenance">Обслуживание</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#design">Дизайн</a>
+              <a class="navigation_li_link" href="#design">Рассчитать стоимость</a>
             </li>
             <li class="navigation_li">
               <a class="navigation_li_link" href="#">Доставка и оплата</a>
@@ -141,7 +141,7 @@
             <img src="./image/Key.png" class="products_image_key">
           </div>
           <div class="products_div_text_key">
-            <h3 class="h3">Аквариум под ключ</h3>
+            <h3 class="h3">Аквариум на заказ</h3>
             <p class="products_div_text_p">Вы заказываете - мы исполняем.</p>
             <ul class="products_div_text_list">
               <li class="products_div_text_list_li">нарисуем эскиз</li>
@@ -186,12 +186,28 @@
             <p class="chart_item_text">Аквариум готов!</p>
           </div>
         </div>
-        <div>
-          <h3>Рассчитать стоимость</h3>
+        <div class="calculate">
+          <h3 class="h3">Калькулятор стоимости</h3>
+          <form name="calculate">
+            <fieldset class="calculate_types">
+              <legend>Вид аквариума</legend>
+              <input type="radio" name="sea" value="Морской"> Морской <br>
+              <input type="radio" name="sweet" value="Пресноводный"> Пресноводный <br>
+            </fieldset>
+            <fieldset class="calculate_dimensions">
+              <legend>Размеры (см)</legend>
+              <input type="text" name="length" value="Длина">
+              <input type="text" name="width" value="Ширина">
+              <input type="text" name="height" value="Высота">
+            </fieldset>
+            <input type="submit" value="Рассчитать">
+          </form>
         </div>
         <div class="products_div_reverse" id="maintenance">
+          <div class="products_div_image">
+             <h3 class="h3_maintain">Обслуживание</h3>
+          </div>
           <div class="products_div_text">
-            <h3 class="h3">Обслуживание</h3>
             <p class="products_div_text_p">Обитателям аквариума необходим регулярный уход. Для  комфортных условий их обитания важно:</p>
             <ul class="products_div_text_list">
               <li class="products_div_text_list_li">соблюдать режим кормления</li>
@@ -202,23 +218,9 @@
             </ul>
             <p class="products_div_text_p">Мы поможем определить, какие процедуры необходимы, и возьмем содержание аквариума на себя.</p>
           </div>
-          <div class="products_div_image">
-            <img src="./image/Maintain_2.jpeg" class="products_image">
-          </div>
         </div>
-        <div class="products_div" id="design">
-          <div class="products_div_image" id="productImage">
-            <img src="./image/Design.jpg" class="products_image">
-          </div>
-          <div class="products_div_text">
-            <h3 class="h3">Дизайн</h3>
-            <p class="products_div_text_p">Разработаем дизайн, который будет сочетаться с интерьером и отвечать характеру использования аквариума.</p>
-            <ul class="products_div_text_list">
-              <li class="products_div_text_list_li">Используем натуральные камень и дерево, живые растения.</li>
-              <li class="products_div_text_list_li">Выбираем наполнение для морских и пресноводных аквариумов.</li>
-              <li class="products_div_text_list_li">Подбираем обитателей и следим за их совместимостью.</li>
-            </ul>
-          </div>
+        <div class="delivery">
+          <h3 class="h3">Доставка и оплата</h3>
         </div>
       </section>
       <section class="section_contacts" id="apply">
