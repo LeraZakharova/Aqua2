@@ -1,11 +1,45 @@
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131292437-1"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131292437-1');
+	</script>
+
+    <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51672554, "init", {
+        id:51672554,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/51672554" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <title>Aquacube. Изготовление и обслуживание аквариумов.</title>
     <meta name="keywords" content="Аквариум, купить аквариум, заказать аквариум, аквариум для дома, аквариум для офиса, аквариум для ресторана, обслуживание аквариума, ремонт аквариума, аквариумные рыбки">
     <meta name="description" content="Изготовление и обслуживание морских и пресноводных аквариумов для дома, офиса и ресторанов.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="yandex-verification" content="9eb379c3d701077d" />
     <meta name='wmail-verification' content='177bfb131b10b136a98a263722d797e5' />
+    <meta property="og:title" content="Aquacube. Изготовление и обслуживание аквариумов." />
+    <meta property="og:description" content="Изготовление и обслуживание морских и пресноводных аквариумов для дома, офиса и ресторанов." />
+    <meta property="og:url" content="https://aquacube.pro/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://aquacube.pro/image/Snippet.jpg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Sweet.jpg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Maintain_2.jpeg" />
+    <meta property="og:image" content="https://aquacube.pro/image/Design.jpg" />
     <link rel="stylesheet" href="./style.css">
     <link rel="reset" href="./reset.css">
     <link rel="normalize" href="./normalize.css">
@@ -15,25 +49,52 @@
   </head>
   <body class="body">
     <header class="header">
+      <div class="navigation_bar">
+        <nav id="navigation_bar">
+          <ul class="navigation">
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#about">О нас</a>
+            </li>
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#types">Виды аквариумов</a>
+            </li>
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#products">Купить аквариум</a>
+            </li>
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#maintenance">Обслуживание</a>
+            </li>
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#design">Дизайн</a>
+            </li>
+            <li class="navigation_li">
+              <a class="navigation_li_link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation_li_last">
+              <a class="navigation_li_link" href="#apply">Связаться с нами</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="main_image">
         <div class="header_name">
           <h1 class="title">Aquacube</h1>
-          <h4 class="title_under">Аквариумы на заказ</h4>
+          <h4 class="title_under">Аквариумы&nbspна&nbspзаказ&nbspв&nbspМоскве</h4>
         </div>
         <nav id="navigation">
           <ul class="header_navigator">
             <li class="header_navigator_order">
-              <a href="#apply" class="header_navigator_link">Заказать аквариум</a>
+              <a href="#apply" class="header_navigator_link">Заказать&nbspаквариум</a>
             </li>
             <li class="header_navigator_other">
-              <a href="#products" class="header_navigator_link">Услуги</a>
+              <a href="#products" class="header_navigator_link">Рассчитать&nbspстоимость</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="types" id="aquariums">
+      <section class="types" id="about">
         <div class="types_places">
           <h3 class="h3">Создаем и обслуживаем аквариумы для...</h3>
           <ul class="types_places_list">
@@ -54,7 +115,7 @@
             </li>
           </ul>
         </div>
-        <div class="types_water">
+        <div class="types_water" id="types">
           <div class="types_water_div">
             <img src="./image/Background.jpg" class="type_image">
             <div class="type_sea_text">
@@ -94,7 +155,41 @@
             </div>
           </div>
         </div>
-        <div class="products_div_reverse">
+        <div class="chart">
+          <div class="chart_item">
+            <img src="./image/computer.svg" class="chart_item_icon">
+            <p class="chart_item_text">Закажите аквариум на сайте или по телефону</p>
+          </div>
+          <img src="./image/arrow.svg" class="chart_arrow">
+          <div class="chart_item">
+            <img src="./image/sketch.svg" class="chart_item_icon">
+            <p class="chart_item_text">Специалист Aquacube приедет к вам, чтобы составить проект</p>
+          </div>
+          <img src="./image/arrow.svg" class="chart_arrow">
+          <div class="chart_item">
+            <img src="./image/discussion.svg" class="chart_item_icon">
+            <p class="chart_item_text">Обсудите условия, цену и сроки изготовления</p>
+          </div>
+          <img src="./image/arrow.svg" class="chart_arrow">
+          <div class="chart_item">
+            <img src="./image/contract.svg" class="chart_item_icon">
+            <p class="chart_item_text">Подпишите договор</p>
+          </div>
+          <img src="./image/arrow.svg" class="chart_arrow">
+          <div class="chart_item">
+            <img src="./image/worker.svg" class="chart_item_icon">
+            <p class="chart_item_text">Специалисты Aquacube приедут к вам, чтобы установить аквариум</p>
+          </div>
+          <img src="./image/arrow.svg" class="chart_arrow">
+          <div class="chart_item">
+            <img src="./image/aquarium.svg" class="chart_item_icon">
+            <p class="chart_item_text">Аквариум готов!</p>
+          </div>
+        </div>
+        <div>
+          <h3>Рассчитать стоимость</h3>
+        </div>
+        <div class="products_div_reverse" id="maintenance">
           <div class="products_div_text">
             <h3 class="h3">Обслуживание</h3>
             <p class="products_div_text_p">Обитателям аквариума необходим регулярный уход. Для  комфортных условий их обитания важно:</p>
@@ -111,12 +206,12 @@
             <img src="./image/Maintain_2.jpeg" class="products_image">
           </div>
         </div>
-        <div class="products_div">
+        <div class="products_div" id="design">
           <div class="products_div_image" id="productImage">
             <img src="./image/Design.jpg" class="products_image">
           </div>
           <div class="products_div_text">
-            <h3 class="h3">Оформление</h3>
+            <h3 class="h3">Дизайн</h3>
             <p class="products_div_text_p">Разработаем дизайн, который будет сочетаться с интерьером и отвечать характеру использования аквариума.</p>
             <ul class="products_div_text_list">
               <li class="products_div_text_list_li">Используем натуральные камень и дерево, живые растения.</li>
@@ -161,6 +256,20 @@
         <div class="toTop_link">
           <img src="./image/up.svg" height="15">
         </div>  
+      </div>
+      <div class="return_call" onclick="showHide('return_call')">
+        <img src="./image/phone.svg" class="return_call_icon">
+        <p class="return_call_text">Заказать обратный звонок</p>
+      </div>
+      <div class="return_call_container" id="return_call">
+        <form class="return_call_form">
+          <input class="return_call_input" name="Name" type="Text" required>
+          <p class="return_call_placeholder">Имя</p>
+          <input id="phone" class="return_call_input" name="Phone" type="tel" required>
+          <p class="return_call_placeholder">Номер телефона</p>
+          <input class="return_call_button" type="submit" value="отправить">
+          <button class="return_call_close" onclick="showHide('return_call')">Закрыть</button>
+        </form>
       </div>
     </footer>
   <script src="script.js"></script>

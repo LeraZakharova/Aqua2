@@ -11,7 +11,16 @@ $(document).ready(function(){
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
+        $('body,html').animate({scrollTop: top-90}, 1000);
+    });
+});
+
+$(document).ready(function(){
+    $("#navigation_bar").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top-90}, 1000);
     });
 });
 
@@ -20,7 +29,7 @@ $(document).ready(function(){
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
+        $('body,html').animate({scrollTop: top-90}, 500);
     });
 });
 
@@ -41,3 +50,19 @@ function up() {
 	} else clearTimeout(t);  
 	return false;  
 } 
+
+
+function showHide(element_id) {
+//Если элемент с id-шником element_id существует
+    if (document.getElementById(element_id)) { 
+//Записываем ссылку на элемент в переменную obj
+    var obj = document.getElementById(element_id); 
+//Если css-свойство display не flex, то: 
+        if (obj.style.display != "flex") { 
+        obj.style.display = "flex"; //Показываем элемент
+        }
+        else obj.style.display = "none"; //Скрываем элемент
+        }
+//Если элемент с id-шником element_id не найден, то выводим сообщение
+    else alert("Элемент с id: " + element_id + " не найден!");
+}
