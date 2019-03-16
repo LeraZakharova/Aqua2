@@ -49,7 +49,7 @@
   </head>
   <body class="body">
     <header class="header">
-      <div class="navigation_bar">
+      <div class="navigation_bar" id="menu">
         <nav id="navigation_bar">
           <ul class="navigation">
             <li class="navigation_li">
@@ -77,20 +77,18 @@
         </div>
       </div>
       <div class="main_image">
+        <div class="promos_container">
+          <div class="promos">
+            <p class="promos_graf">Бесплатная доставка аквариума в пределах МКАД</p>
+            <p class="promos_graf">Бесплатная консультация специалиста-ихтиолога </p>
+            <p class="promos_graf">Бесплатный месяц обслуживания при подписании договора на год </p>
+            <p class="promos_graf">Дизайн-проект в подарок при заказе аквариума </p> 
+          </div>
+        </div>
         <div class="header_name">
           <h1 class="title">Aquacube</h1>
           <h4 class="title_under">Аквариумы&nbspна&nbspзаказ&nbspв&nbspМоскве</h4>
         </div>
-        <nav id="navigation">
-          <ul class="header_navigator">
-            <li class="header_navigator_order">
-              <a href="#apply" class="header_navigator_link">Заказать&nbspаквариум</a>
-            </li>
-            <li class="header_navigator_other">
-              <a href="#products" class="header_navigator_link">Рассчитать&nbspстоимость</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -266,7 +264,7 @@
       </div>
       <div class="return_call" onclick="showHide('return_call')">
         <img src="./image/phone.svg" class="return_call_icon">
-        <p class="return_call_text">Заказать обратный звонок</p>
+        <p class="return_call_text">Перезвоните мне</p>
       </div>
       <div class="return_call_container" id="return_call">
         <form class="return_call_form">
@@ -277,6 +275,9 @@
           <input class="return_call_button" type="submit" value="отправить">
           <button class="return_call_close" onclick="showHide('return_call')">Закрыть</button>
         </form>
+      </div>
+      <div class="menu" onclick="showHide('menu')">
+          <img src="./image/menu.svg" class="menu_icon">
       </div>
     </footer>
   <script src="script.js"></script>
