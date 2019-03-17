@@ -58,6 +58,18 @@
   }
 }
 
+.header_navigator_link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 6px 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    font-variant: all-petite-caps;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+}
 
 .navigation_bar{
 	width: 100%;
@@ -67,6 +79,7 @@
 	justify-content: center;
 	align-items: center;
 	position: fixed;
+	z-index: 1;
 }
 
 .navigation{
@@ -217,6 +230,7 @@
 	margin-top: 90px;
 	display: block;
 	height: 550px;
+	overflow: hidden;
 	background-image: url(./image/Sea.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -258,6 +272,7 @@
 	background-color: #F4F4F4;
 	width: 100%;
 	height: 50px;
+	overflow: hidden;
 	margin-top: 10px;
 }
 
@@ -274,10 +289,10 @@
 
   .promos_graf{
   	font-family: 'Rubik', sans-serif;
-  	font-weight: 400;
+  	font-weight: 300;
   	font-size: 26px;
     color: #F65F3C;
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -1004,9 +1019,9 @@
 	font-weight: 300;
 	font-size: 18px;
 	color: white;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
     margin: 0;
     background: black;
     display:-webkit-box;
@@ -1026,9 +1041,9 @@
 }
 
 .toTop_link:hover{
-	height: 100px;
-    width: 100px;
-    border-radius: 50px;
+	height: 60px;
+    width: 60px;
+    border-radius: 30px;
     background: #F65F3C;
     -webkit-transition: all linear 0.2s;
     -o-transition: all linear 0.2s;
@@ -1176,6 +1191,62 @@
 		width: 65px;
 		font-size: 15px;
 	}
+
+	.promos_graf{
+		text-align: left;
+		padding-left: 50px;
+		font-size: 18px;
+	}
+
+	.chart{
+		height: max-content;
+		padding: 100 0;
+		flex-direction: column;
+	}
+
+	.chart_item{
+		flex-direction: row;
+		height: fit-content;
+		width: 70%
+	}
+
+	.chart_item_icon{
+		padding:0 20;
+		width: 50px;
+
+	}
+
+	.chart_item_text{
+		width: auto;
+		padding: 0 20;
+		margin: 0;
+		font-size: 16px;
+	}
+
+	.chart_arrow{
+		transform: rotate(90deg);
+		width: 25px;
+		margin: 10 0;
+	}
+
+	.chart_item:hover{
+		width: 80%;
+		height: 100px;
+		border: solid;
+		border-color: #F65F3C;
+		border-width: 5px;
+		transition: all linear 0.5s;
+}
+
+	.chart_item:hover .chart_item_text{
+		font-size: 18px;
+		transition: all linear 0.5s;
+}
+
+	.chart_item:hover .chart_item_icon{
+		width: 60px;
+		transition: all linear 0.5s;
+}
 
 }
 
