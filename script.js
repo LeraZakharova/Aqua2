@@ -66,3 +66,17 @@ function showHide(element_id) {
 //Если элемент с id-шником element_id не найден, то выводим сообщение
     else alert("Элемент с id: " + element_id + " не найден!");
 }
+
+function calculate() {
+    var length = document.getElementById(length).value;
+    var width = document.getElementById(width).value;
+    var height = document.getElementById(height).value;
+    if (document.getElementById(length).value = true){
+        var type = 1.4;
+    }
+    else var type = 1;
+    var volume = length * width * height / 1000;
+    var price = volume * type;
+    document.getElementById(volume).value = volume;
+    document.getElementById(price).value = price;
+}

@@ -190,19 +190,25 @@
             <div class="calculate_container">
               <fieldset class="calculate_types">
                 <legend>Вид аквариума</legend>
-                <input type="radio" name="type" value="Морской" class="input_types" id="Sea"> <label for="Sea">Морской </label><br>
-                <input type="radio" name="type" value="Пресноводный" class="input_types" id="Sweet"> <label for="Sweet">Пресноводный</label><br>
+                <input type="radio" name="type" value="Морской" class="input_types" id="sea"> 
+                <label for="sea">Морской</label>
+                <br>
+                <input type="radio" name="type" value="Пресноводный" class="input_types" id="sweet">
+                <label for="sweet">Пресноводный</label>
+                <br>
               </fieldset>
               <fieldset class="calculate_dimensions">
-                <legend>Размеры (см)</legend>
-                <input type="text" name="length" value="Длина" class="input_dimensions">
-                <input type="text" name="width" value="Ширина" class="input_dimensions">
-                <input type="text" name="height" value="Высота" class="input_dimensions">
+                <input type="text" id="length" name="length" placeholder="Длина(см)" class="input_dimensions" required>
+                <input type="text" id="width" name="width" placeholder="Ширина(см)" class="input_dimensions" required>
+                <input type="text" id="height" name="height" placeholder="Высота(см)" class="input_dimensions" required>
               </fieldset>
             </div>
-            <input type="submit" value="Рассчитать" class="calculate_submit">
+            <input type="submit" value="Рассчитать" class="calculate_submit" onclick="calculate()">
             <div class="calculate_result">
-              <p class="calculate_text">Примерная стоимость аквариума:</p><output name="price">0</output>
+              <p class="calculate_text">Объем:</p><output id="volume" name="volume">0</output>
+            </div>
+            <div class="calculate_result">
+              <p class="calculate_text">Примерная стоимость:</p><output id="price" name="price">0</output>
             </div>
           </form>
         </div>
