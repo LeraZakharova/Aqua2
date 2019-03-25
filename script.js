@@ -68,15 +68,15 @@ function showHide(element_id) {
 }
 
 function calculate() {
-    var length = document.getElementById(length).value;
-    var width = document.getElementById(width).value;
-    var height = document.getElementById(height).value;
-    if (document.getElementById(length).value = true){
-        var type = 1.4;
-    }
-    else var type = 1;
+    var length = parseFloat(document.getElementById('length').value);
+    var width = parseFloat(document.getElementById('width').value);
+    var height = parseFloat(document.getElementById('height').value);
+    var type = 1;
+   if (document.getElementById('sea').checked) {
+    type = 1.4;
+   }
     var volume = length * width * height / 1000;
     var price = volume * type;
-    document.getElementById(volume).value = volume;
-    document.getElementById(price).value = price;
+    document.getElementById('volume').innerHTML = volume;
+    document.getElementById('price').innerHTML = price;
 }
