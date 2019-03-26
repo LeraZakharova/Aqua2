@@ -67,6 +67,24 @@ function showHide(element_id) {
     else alert("Элемент с id: " + element_id + " не найден!");
 }
 
+function closeMenu(element_id) {
+//Если ширина окна меньше 800px
+    if (document.documentElement.clientWidth < "800"){
+//Если элемент с id-шником element_id существует
+        if (document.getElementById(element_id)) { 
+//Записываем ссылку на элемент в переменную obj
+    var obj = document.getElementById(element_id); 
+//Если css-свойство display не flex, то: 
+        if (obj.style.display != "flex") { 
+        obj.style.display = "flex"; //Показываем элемент
+        }
+        else obj.style.display = "none"; //Скрываем элемент
+        }
+//Если элемент с id-шником element_id не найден, то выводим сообщение
+    else alert("Элемент с id: " + element_id + " не найден!");
+    }
+}
+
 function calculate() {
     var length = parseFloat(document.getElementById('length').value);
     var width = parseFloat(document.getElementById('width').value);

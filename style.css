@@ -535,7 +535,7 @@
 	border: solid;
 	border-color: #F65F3C;
     border-width: 5px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -657,6 +657,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .products_div_image::before{
@@ -792,10 +793,11 @@
 
 table{
   border-collapse: collapse;
-  margin: 50 0;
+  margin: 50 20;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  table-layout: auto;
 }
 
 td {
@@ -1118,6 +1120,7 @@ tr:hover {
 	height: 40px;
 	border-radius: 20px;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .return_call_icon{
@@ -1229,6 +1232,7 @@ tr:hover {
 	justify-content: center;
 	align-items: center;
 	display: none;
+	z-index: 1;
 }
 
 .menu_icon{
@@ -1359,7 +1363,7 @@ tr:hover {
 		margin: 0;
 	    display: flex;
 	    flex-direction: column-reverse;
-    	justify-content: flex-end;
+    	justify-content: space-between;
 	}
 
 	.menu{
@@ -1367,7 +1371,13 @@ tr:hover {
 	}
 
 	.promos_container{
-		margin-top: 35%;
+		margin-top: 0;
+		margin-bottom: 10
+	}
+
+	.promos_graf{
+		padding: 0;
+		text-align: center;
 	}
 
 	.header_name{
@@ -1425,10 +1435,33 @@ tr:hover {
 		font-size: 16px;
 	}
 
+	.products_div_text_p_maintain{
+		font-size: 16px;
+	}
+
 	.turnkey_text{
 		font-size: 16px;
 	}
+
+	table{
+		font-size: 16px;
+	}
 } 
+
+@media all and (max-width: 640px){
+	
+	table{
+		font-size: 15px;
+	}
+
+	td{
+		padding: 0 10;
+	}
+
+	tr{
+		height: 40px;
+	}
+}
 
 @media all and (max-width: 559px){
 	.contacts_list_ul{
@@ -1453,6 +1486,16 @@ tr:hover {
 	}
 }
 
+@media all and (max-width: 498px){
+	.products_div_text_p_maintain{
+		text-align: center;
+	}
+
+	.chart_item_text{
+		font-size: 14px;
+	}
+}
+
 @media all and (max-width: 460px){
 
 	.header_navigator{
@@ -1468,6 +1511,16 @@ tr:hover {
 		width: -moz-max-content;
 		width: max-content;
 		padding-bottom: 10%;
+	}
+}
+
+@media all and (max-width: 420px){
+	table{
+		font-size: 14px;
+	}
+
+	td{
+		height: 50px;
 	}
 }
 
