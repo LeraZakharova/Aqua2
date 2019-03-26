@@ -790,6 +790,39 @@
     margin-bottom: 10%;
 }
 
+table{
+  border-collapse: collapse;
+  margin: 50 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:hover {
+	background-color: #F4F4F4;
+}
+
+.col1{
+  width: 350px;
+}
+
+.coln{
+  width: 170px;
+  text-align: center;
+}
+
+.td_center{
+  text-align: center;
+}
+
+.check{
+	height: 20px;
+}
+
 .chart{
 	width: 100%;
 	display: flex;
