@@ -292,7 +292,7 @@
   	font-weight: 300;
   	font-size: 26px;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -391,24 +391,18 @@
 }
 
 .types_water{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 	width: 100%;
 }
 
 .types_water_div{
-	width: 45%;
+	width: 30%;
 	min-width: 300px;
 	max-height: 600px;
-	margin: 0px 10px 40px;
+	margin: 0px 50px 40px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -425,9 +419,9 @@
 }
 
 .type_image{
-	width: 100%;
-	max-height: 380px;
-	padding-bottom: 5%;
+	width: 270px;
+	margin-top: 5%;
+	border-radius: 50%;
 }
 
 .type_sea_text{
@@ -630,6 +624,7 @@
 .products_div_order{
 	width: 100%;
 	padding-top: 5%;
+	margin-bottom: 100px;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -827,20 +822,32 @@ tr:hover {
 .delivery{}
 
 .delivery_container{
+	padding-top: 50px;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .delivery_column{
-	width: 50%;
+	width: 40%;
+	max-width: 450px;
+    min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.delivery_image{
+	height: 80px;
+	padding: 20 0;
 }
 
 .delivery_text{
 	font-family: 'Rubik', sans-serif;
  	font-weight: 400;
  	font-size: 18px;
- 	text-align: left;
+ 	text-align: center;
 }
 
 .chart{
