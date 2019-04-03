@@ -56,16 +56,10 @@
               <a class="navigation_li_link" href="#about">О нас</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#types">Виды аквариумов</a>
-            </li>
-            <li class="navigation_li">
               <a class="navigation_li_link" href="#products">Аквариум на заказ</a>
             </li>
             <li class="navigation_li">
               <a class="navigation_li_link" href="#maintenance">Обслуживание</a>
-            </li>
-            <li class="navigation_li">
-              <a class="navigation_li_link" href="#design">Рассчитать стоимость</a>
             </li>
             <li class="navigation_li">
               <a class="navigation_li_link" href="#delivery">Доставка и оплата</a>
@@ -184,34 +178,7 @@
             <p class="chart_item_text">Аквариум готов!</p>
           </div>
         </div>
-        <div class="calculate">
-          <h3 class="h3">Калькулятор стоимости</h3>
-          <form name="calculate" class="calculate_form">
-            <div class="calculate_container">
-              <fieldset class="calculate_types">
-                <legend>Вид аквариума</legend>
-                <input type="radio" name="type" value="Морской" class="input_types" id="sea"> 
-                <label for="sea">Морской</label>
-                <br>
-                <input type="radio" name="type" value="Пресноводный" class="input_types" id="sweet">
-                <label for="sweet">Пресноводный</label>
-                <br>
-              </fieldset>
-              <fieldset class="calculate_dimensions">
-                <input type="number" id="length" name="length" placeholder="Длина(см)" class="input_dimensions" required>
-                <input type="number" id="width" name="width" placeholder="Ширина(см)" class="input_dimensions" required>
-                <input type="number" id="height" name="height" placeholder="Высота(см)" class="input_dimensions" required>
-              </fieldset>
-            </div>
-            <input type="submit" value="Рассчитать" class="calculate_submit" onclick="calculate()">
-            <div class="calculate_result">
-              <p class="calculate_text">Объем:</p><output id="volume" name="volume">0</output>
-            </div>
-            <div class="calculate_result">
-              <p class="calculate_text">Примерная стоимость:</p><output id="price" name="price">0</output>
-            </div>
-          </form>
-        </div>
+        
         <div class="products_div_reverse" id="maintenance">
           <div class="products_div_image">
             <h3 class="h3_maintain">Обслуживание</h3>
@@ -304,25 +271,19 @@
     </main>
     <footer class="footer">
       <div class="footer_copyright">
-        <p class="copyright"> &#169; Copyright, 2018-2018 Aquacube.pro</p>
+        <p class="copyright"> &#169; Copyright, 2018-2019 Aquacube.pro</p>
+        <p class="copyright"><a href="./policy.html" class="footer_policy">Политика конфиденциальности</a></p>
       </div>  
       <div id="toTop" class="toTop" onclick="up()">
         <div class="toTop_link">
           <img src="./image/up.svg" height="15">
         </div>  
       </div>
-      <div class="return_call" onclick="showHide('return_call')">
-        <img src="./image/phone.svg" class="return_call_icon">
-        <p class="return_call_text">Перезвоните мне</p>
-      </div>
-      <div class="return_call_container" id="return_call">
+      <div class="return_call">
         <form class="return_call_form">
-          <input class="return_call_input" name="Name" type="Text" required>
-          <p class="return_call_placeholder">Имя</p>
-          <input id="phone" class="return_call_input" name="Phone" type="tel" required>
-          <p class="return_call_placeholder">Номер телефона</p>
-          <input class="return_call_button" type="submit" value="отправить">
-          <button class="return_call_close" onclick="showHide('return_call')">Закрыть</button>
+          <input id="phone" type="tel" name="Phone" class="return_call_input">
+          <img src="./image/phone.svg" class="return_call_icon">
+          <input type="submit" value="Перезвоните мне" class="return_call_text">
         </form>
       </div>
       <div class="menu" onclick="showHide('menu')">

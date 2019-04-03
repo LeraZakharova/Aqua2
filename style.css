@@ -1085,6 +1085,15 @@ tr:hover {
 	text-align: center;
 }
 
+.copyright{
+	margin: 5 0;
+}
+
+.footer_policy{
+	color: white;
+	text-decoration: none;
+}
+
 .toTop{
 	position: fixed;
 	bottom: 30px;
@@ -1148,6 +1157,22 @@ tr:hover {
 	z-index: 1;
 }
 
+.return_call_form{
+	margin: 0;
+	display: flex;
+    align-items: center;
+}
+
+.return_call:hover{
+	width: 400px;
+	transition: all linear 0.2s;
+}
+
+.return_call:hover .return_call_input{
+	display: block;
+	transition: all linear 0.2s;
+}
+
 .return_call_icon{
 	height: 20px;
 	margin: 10px;
@@ -1161,31 +1186,8 @@ tr:hover {
 	font-size: 14px;
 	color: white;
 	margin-right: 10px;
-}
-
-.return_call_container{
-	position: fixed;
-	display: none;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.return_call_form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	width: 30%;
-	min-width: 280px;
-	height: 60%;
-	min-height: 300px;
-	background-color: white;
+	background-color: rgba(0,0,0,0);
+	border:none;
 }
 
 .return_call_input{
@@ -1193,57 +1195,20 @@ tr:hover {
 	border-left: none;
 	border-right: none;
 	border-bottom: solid;
-	border-color: black;
-	border-width: 2px;
-	height: 40px;
-	width: 250px;
+	border-color: white;
+	display: none;
+	border-width: 1px;
+	height: 25px;
+	width: 200px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
+	background-color: rgba(0,0,0,0);
 }
 
 .return_call_input:focus{
 	outline: 0;
 	outline-offset: 0;
-	background-color: #F4F4F4;
-}
-
-.return_call_placeholder{
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	font-variant: all-petite-caps;
-	color: black;
-	margin-top: 0;
-}
-
-.return_call_button{
-	height: 40px;
-	font-family: 'Rubik', sans-serif;
-	font-variant: all-petite-caps;
-	font-weight: 300;
-	font-size: 18px;
-	color: white;
-	background-color: black;
-	border: none;
-	width: 250px;
-	margin:15 0;
-}
-
-.return_call_close{
-	height: 40px;
-	font-family: 'Rubik', sans-serif;
-	font-variant: all-petite-caps;
-	font-weight: 300;
-	font-size: 18px;
-	text-align: center;
-	color: black;
-	background-color: white;
-	border: solid;
-	box-sizing: border-box;
-	border-color: black; 
-	width: 250px;
-	margin:10 0;
 }
 
 .menu{
@@ -1262,6 +1227,43 @@ tr:hover {
 
 .menu_icon{
 	height: 20px;
+}
+
+.policy{
+	margin: 50 20 0 20;
+}
+
+.h4{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin: 20 10;
+}
+
+.policy_text{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 20 30 20 10;
+}
+
+.policy_text_graf{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 5 40;
+}
+
+.policy_link{
+	text-decoration: none;
+	color: black;
+	background-color: #faaf9d;
+}
+
+.policy_mailto{
+	text-decoration: none;
+	color: black;
+	background-color: #faaf9d;
 }
 
 
