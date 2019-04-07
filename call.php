@@ -1,24 +1,17 @@
 <?php 
 /* Осуществляем проверку вводимых данных и их защиту от враждебных  
 скриптов */ 
-$Name = htmlspecialchars($_POST["Name"]); 
-$Email = htmlspecialchars($_POST["Email"]); 
-$Phone = htmlspecialchars($_POST["Phone"]); 
-$Description = htmlspecialchars($_POST["Description"]); 
+$Phone = htmlspecialchars($_POST["Callme"]); 
 /* Устанавливаем e-mail адресата */ 
 $myemail = "info@aquacube.pro";  
 /* Создаем новую переменную, присвоив ей значение */ 
 $message_to_myemail = "Здравствуйте!  
-В форме обратной свзи на Aquacube новое сообщение.  
-Имя отправителя: $Name  
-E-mail: $Email  
-Номер телефона: $Phone
-Текст сообщения: $Description
-Конец";
+На Aquacube запрос на обратный звонок с номера $Phone 
+Конец"; 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-/* Отправляем сообщение, используя mail() функцию */ 
-mail($myemail, "Заявка с сайта", $message_to_myemail); 
+/* Отправляем сообщение, используя mail() функцию */
+mail($myemail, "Обратный звонок", $message_to_myemail, $headers); 
 ?>
 <html>
   <head>
@@ -26,7 +19,7 @@ mail($myemail, "Заявка с сайта", $message_to_myemail);
   </head>
   <body>
 	<div style="width:100%; height:100%; font-family: 'Rubik', sans-serif; font-variant: all-petite-caps; font-weight: 400; font-size: 22px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
-		<p>Ваше сообщение было успешно отправлено!</p> 
+		<p> Спасибо! Мы перезвоним вам в течение 24 часов.</p> 
 		<p>На <a href="index.html">Главную >>></a></p>
 	</div>
   </body>

@@ -65,7 +65,7 @@
               <a class="navigation_li_link" href="#delivery">Доставка и оплата</a>
             </li>
             <li class="navigation_li_last">
-              <a class="navigation_li_link" href="#apply">Связаться с нами</a>
+              <a class="navigation_li_link" href="#apply">Контакты</a>
             </li>
           </ul>
         </div>
@@ -227,10 +227,10 @@
           <div class="delivery_container">
             <div class="delivery_column">
               <img src="./image/delivery.svg" class="delivery_image">
-              <p class="delivery_text">Доставим стекло, оборудование и наполнение для аквариума к вам домой, в офис или ресторан и соберем его на месте. 
+              <p class="delivery_text"> В пределах МКАД доставка бесплатная, за МКАД - 50 рублей за километр. 
                 <br>
                 <br>
-              В пределах МКАД доставка бесплатная, за МКАД - 50 рублей за километр.</p>
+              Доставим стекло, оборудование и наполнение для аквариума к вам домой, в офис или ресторан и соберем его на месте.</p>
             </div>
             <div class="delivery_column">
               <img src="./image/payment.svg" class="delivery_image">
@@ -247,10 +247,10 @@
         <div class="contacts">  
           <div class="contacts_list">
             <ul class="contacts_list_ul">
-              <li>E-mail: <a href="mailto:info@aquaqube.pro" class="contacts_link">info@aquaqube.pro</a></li>
-              <li>Телефон: <a href="tel: +79959059962" class="contacts_link">+7-995-905-99-62</a></li>
-              <li><a href="https://wa.me/79168524321" class="contacts_link">WhatsApp</a></li>
-              <li><a href="tg://resolve?domain=<Aquacube>" class="contacts_link">Telegram</a></li>
+              <li>E-mail: <a href="mailto:info@aquaqube.pro" class="contacts_link" target="_blank">info@aquaqube.pro</a></li>
+              <li>Телефон: <a href="tel: +79959059962" class="contacts_link" target="_blank">+7-995-905-99-62</a></li>
+              <li><a href="https://wa.me/79168524321" class="contacts_link" target="_blank">WhatsApp</a></li>
+              <li><a href="tg://resolve?domain=<Aquacube>" class="contacts_link" target="_blank">Telegram</a></li>
             </ul>
           </div>            
           <div class="contacts_form">
@@ -272,19 +272,23 @@
     <footer class="footer">
       <div class="footer_copyright">
         <p class="copyright"> &#169; Copyright, 2018-2019 Aquacube.pro</p>
-        <p class="copyright"><a href="./policy.html" class="footer_policy">Политика конфиденциальности</a></p>
+        <p class="copyright"><a href="./policy.html" class="footer_policy" target="_blank">Политика конфиденциальности</a></p>
       </div>  
       <div id="toTop" class="toTop" onclick="up()">
         <div class="toTop_link">
           <img src="./image/up.svg" height="15">
         </div>  
       </div>
-      <div class="return_call">
-        <form class="return_call_form">
-          <input id="phone" type="tel" name="Phone" class="return_call_input">
-          <img src="./image/phone.svg" class="return_call_icon">
-          <input type="submit" value="Перезвоните мне" class="return_call_text">
-        </form>
+      <div class="contacts_fixed">
+        <a href="https://wa.me/79168524321" target="_blank"><img src="./image/whatsapp.svg" class="contact_image"></a>
+        <a href="tg://resolve?domain=<Aquacube>" target="_blank"><img src="./image/telegram.svg" class="contact_image"></a>
+        <div class="return_call">
+          <img src="./image/phone.svg" class="return_call_icon" onclick="showHide('return_call')">
+          <form class="return_call_form" id="return_call" action="call.php">
+            <input id="callme" type="tel" name="Callme" class="return_call_input" placeholder="Введите номер телефона" required>
+            <input type="submit" value="Перезвонить" class="return_call_submit">
+          </form>
+        </div>
       </div>
       <div class="menu" onclick="showHide('menu')">
           <img src="./image/menu.svg" class="menu_icon">

@@ -6,6 +6,10 @@ $(document).ready(function() {
     $("#phone").mask("+7 (999) 999-9999");
   });
 
+$(document).ready(function() {
+    $("#phone_return").mask("+7 (999) 999-9999");
+  });
+
 $(document).ready(function(){
     $("#navigation").on("click","a", function (event) {
         event.preventDefault();
