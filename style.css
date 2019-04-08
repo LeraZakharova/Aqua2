@@ -1420,6 +1420,10 @@ tr:hover {
 		display: flex;
 	}
 
+	.contacts_fixed{
+		top: 25px;
+	}
+
 	.promos_container{
 		margin-top: 0;
 		margin-bottom: 10
