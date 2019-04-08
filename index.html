@@ -53,19 +53,19 @@
         <nav id="navigation_bar">
           <ul class="navigation" onclick="closeMenu('menu')">
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#about">О нас</a>
+              <a class="navigation_li_link" href="#about" onClick="yaCounter49088227.reachGoal('about');">О нас</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#products">Аквариум на заказ</a>
+              <a class="navigation_li_link" href="#products" onClick="yaCounter49088368.reachGoal('zakaz');">Аквариум на заказ</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#maintenance">Обслуживание</a>
+              <a class="navigation_li_link" href="#maintenance" onClick="yaCounter49088488.reachGoal('maintain');">Обслуживание</a>
             </li>
             <li class="navigation_li">
-              <a class="navigation_li_link" href="#delivery">Доставка и оплата</a>
+              <a class="navigation_li_link" href="#delivery" onClick="yaCounter49088524.reachGoal('delivery');">Доставка и оплата</a>
             </li>
             <li class="navigation_li_last">
-              <a class="navigation_li_link" href="#apply">Контакты</a>
+              <a class="navigation_li_link" href="#apply" onClick="yaCounter49088566.reachGoal('contacts');">Контакты</a>
             </li>
           </ul>
         </div>
@@ -124,7 +124,7 @@
             </ul>
             <p class="products_div_text_p">Дадим совет по каждому из пунктов, согласуем план и выполним работу вовремя.</p>
             <div class="products_order" id="order">
-              <a href="#apply" class="header_navigator_link">Заказать</a>
+              <a href="#apply" class="header_navigator_link" onClick="yaCounter49088020.reachGoal('order');">Заказать</a>
             </div>
           </div>
         </div>
@@ -247,10 +247,10 @@
         <div class="contacts">  
           <div class="contacts_list">
             <ul class="contacts_list_ul">
-              <li>E-mail: <a href="mailto:info@aquaqube.pro" class="contacts_link" target="_blank">info@aquaqube.pro</a></li>
-              <li>Телефон: <a href="tel: +79959059962" class="contacts_link" target="_blank">+7-995-905-99-62</a></li>
-              <li><a href="https://wa.me/79168524321" class="contacts_link" target="_blank">WhatsApp</a></li>
-              <li><a href="tg://resolve?domain=<Aquacube>" class="contacts_link" target="_blank">Telegram</a></li>
+              <li>E-mail: <a href="mailto:info@aquaqube.pro" class="contacts_link" target="_blank" onClick="yaCounter49087597.reachGoal('mailto');">info@aquaqube.pro</a></li>
+              <li>Телефон: <a href="tel: +79959059962" class="contacts_link" target="_blank" onClick="yaCounter49087735.reachGoal('call');">+7-995-905-99-62</a></li>
+              <li><a href="https://wa.me/79168524321" class="contacts_link" target="_blank" onClick="yaCounter49087762.reachGoal('whatsapp2');">WhatsApp</a></li>
+              <li><a href="tg://resolve?domain=<AquaCube>" class="contacts_link" target="_blank" onClick="yaCounter49087801.reachGoal('telegram2');">Telegram</a></li>
             </ul>
           </div>            
           <div class="contacts_form">
@@ -280,11 +280,11 @@
         </div>  
       </div>
       <div class="contacts_fixed">
-        <a href="https://wa.me/79168524321" target="_blank"><img src="./image/whatsapp.svg" class="contact_image"></a>
-        <a href="tg://resolve?domain=<Aquacube>" target="_blank"><img src="./image/telegram.svg" class="contact_image"></a>
+        <a href="https://wa.me/79168524321" target="_blank" onClick="yaCounter49087414.reachGoal('whatsapp1');"><img src="./image/whatsapp.svg" class="contact_image"></a>
+        <a href="tg://resolve?domain=<AquaCube>" target="_blank" onClick="yaCounter49087492.reachGoal('telegram1');"><img src="./image/telegram.svg" class="contact_image"></a>
         <div class="return_call">
           <img src="./image/phone.svg" class="return_call_icon" onclick="showHide('return_call')">
-          <form class="return_call_form" id="return_call" action="call.php">
+          <form class="return_call_form" id="return_call" action="call.php" onSubmit="yaCounter49086166.reachGoal('returncall');">
             <input id="callme" type="tel" name="Callme" class="return_call_input" placeholder="Введите номер телефона" required>
             <input type="submit" value="Перезвонить" class="return_call_submit">
           </form>
