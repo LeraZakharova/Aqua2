@@ -1142,51 +1142,54 @@ tr:hover {
     color: white;
 }
 
-.return_call{
+.contacts_fixed{
 	display: flex;
 	position: fixed;
 	align-items: center;
 	justify-content: center;
 	top: 105px;
 	right: 25px;
+	width: max-content;
+}
+
+.return_call{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #F65F3C;
-	width: 200px;
-	height: 40px;
-	border-radius: 20px;
+	width: max-content;
+	min-width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	margin-left: 10px;
 	cursor: pointer;
 	z-index: 1;
 }
 
 .return_call_form{
 	margin: 0;
-	display: flex;
+	display: none;
     align-items: center;
 }
 
-.return_call:hover{
-	width: 400px;
-	transition: all linear 0.2s;
-}
-
-.return_call:hover .return_call_input{
-	display: block;
-	transition: all linear 0.2s;
-}
-
 .return_call_icon{
-	height: 20px;
+	height: 25px;
 	margin: 10px;
 }
 
-.return_call_text{
+.return_call_submit{
 	display: block;
 	font-family: 'Rubik', sans-serif;
 	font-variant: all-petite-caps;
-	font-weight: 300;
-	font-size: 14px;
-	color: white;
-	margin-right: 10px;
-	background-color: rgba(0,0,0,0);
+	font-weight: 400;
+	font-size: 16px;
+	padding: 0 15;
+    height: 35px;
+    color: #F65F3C;
+    margin: 0 20;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 18px;
+    cursor: pointer;
 	border:none;
 }
 
@@ -1196,19 +1199,40 @@ tr:hover {
 	border-right: none;
 	border-bottom: solid;
 	border-color: white;
-	display: none;
+	display: block;
 	border-width: 1px;
 	height: 25px;
-	width: 200px;
+	color: white;
+	width: 160px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	background-color: rgba(0,0,0,0);
 }
 
+.return_call_input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 16;
+    font-variant: all-petite-caps;
+    text-align: center;
+} 
+
+.return_call_input::-moz-placeholder {
+    color: rgba(255,255,255,0.7);
+    font-size: 16;
+    font-variant: all-petite-caps;
+    text-align: center;
+} 
+
 .return_call_input:focus{
 	outline: 0;
 	outline-offset: 0;
+	width: 160px;
+}
+
+.contact_image{
+	height: 50px;
+	margin: 0 10;
 }
 
 .menu{
