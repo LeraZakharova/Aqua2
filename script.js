@@ -7,7 +7,7 @@ $(document).ready(function() {
   });
 
 $(document).ready(function() {
-    $("#phone_return").mask("+7 (999) 999-9999");
+    $("#callme").mask("+7 (999) 999-9999");
   });
 
 $(document).ready(function(){
